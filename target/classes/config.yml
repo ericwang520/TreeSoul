@@ -1,0 +1,72 @@
+MySQL:
+  host: localhost
+  port: 3306
+  database: minecraft
+  username: minecraft
+  password: minecraft1234
+
+
+
+sign-format: '[樹靈]'
+treeUI:
+  displayName: '%player% 的樹靈'
+  chest:
+    DisplayName: '&7樹靈獎勵'
+    DisplayLore:
+      - '&7樹靈主人根據樹靈發出的獎勵人數來領取獎勵'
+
+  sapling:
+    DisplayName: '&7樹木資訊'
+    DisplayLore:
+      - '&7肥料: %fertilizer%'
+      - '&7目前階段: %state%'
+
+
+  boneMeal:
+    DisplayName: '&7肥料介面'
+    DisplayLore:
+      - '&7點擊進入施肥介面'
+      -
+fertilizerUI:
+  fertilizer_sun:
+    DisplayName: '&7施肥陽光肥料'
+    DisplayLore:
+      - '&7您目前已施肥 %amount% 個'
+  fertilizer_river:
+    DisplayName: '&7施肥河流肥料'
+    DisplayLore:
+      - '&7您目前已施肥 %amount% 個'
+  fertilizer_air:
+    DisplayName: '&7施肥空氣肥料'
+    DisplayLore:
+      - '&7您目前已施肥 %amount% 個'
+
+fertilizer:
+  fertilizer_sun:
+    DisplayName: '&7陽光肥料'
+    DisplayLore:
+      - '&7陽光肥料的敘述'
+  fertilizer_river:
+    DisplayName: '&7河流肥料'
+    DisplayLore:
+      - '&7河流肥料的敘述'
+  fertilizer_air:
+    DisplayName: '&7空氣肥料'
+    DisplayLore:
+      - '&7空氣肥料的敘述'
+
+# /summer_tree_price %player% %type_of_tree% %tree_level% %bonus% %get_chance%
+prize_commands:
+  prize_owner: 'summer_tree_price %player% %type_of_tree% %tree_level% %bonus% 1'
+  prize_customer: 'summer_tree_price %player% %type_of_tree% %tree_level% %bonus% 0.4'
+
+translate:
+  successFertilizer_sun: '&7[&a樹靈系統&7] &a成功施肥 %fertitizer_amount% 個陽光肥料 &7(目前數量: %amount%)。'
+  successFertilizer_air: '&7[&a樹靈系統&7] &a成功施肥 %fertitizer_amount% 個空氣肥料 &7(目前數量: %amount%)。'
+  successFertilizer_river: '&7[&a樹靈系統&7] &a成功施肥 %fertitizer_amount% 個河流肥料 &7(目前數量: %amount%)。'
+  failFertilizer_sun: '&7[&a樹靈系統&7] &c您的太陽肥料不足。'
+  failFertilizer_air: '&7[&a樹靈系統&7] &c您的空氣肥料不足。'
+  failFertilizer_river: '&7[&a樹靈系統&7] &c您的河流肥料不足。'
+  praylimitday: '&7[&a樹靈系統&7] &c您今天已經祈禱 5 次了，請明天再來。'
+  praylimitweek: '&7[&a樹靈系統&7] &c您這周已經來過這棵樹了，請下禮拜再來。'
+  praysuccess: '&7[&a樹靈系統&7] &a成功簽到。 &7(您今天已經祈福了 %amount% 次)'

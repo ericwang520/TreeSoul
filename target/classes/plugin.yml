@@ -1,0 +1,13 @@
+name: TreeSoul
+version: '1.0'
+main: me.yiyi1234.treesoul.TreeSoul
+authors: [ Yiyi1234 ]
+description: A plugin that made for pondmmorpg server.
+api-version: 1.11
+depend: [NBTAPI]
+commands:
+  TreeSoul:
+
+permissions:
+  TreeSoul.op:
+    default: op
